@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Our Cars</h1>
+    <ul>
+        <li>{{ car.year }}</li>
+        <li>{{ car.make }}</li>
+        <li>{{ car.model }}</li>
+    </ul>
+
+<a href="{% url 'edit_car' car.id %}">Edit Car</a>
+<br>
+<a href="{% url 'delete_car' car.id %}">Delete Car</a>
+<br>
+<a href="{% url 'cars' %}">Back To Cars</a>
+
+
+</body>
+</html>

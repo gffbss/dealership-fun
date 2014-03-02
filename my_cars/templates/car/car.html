@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Cars</title>
+</head>
+<body>
+    <h3>Our Cars</h3>
+    <ul>
+    {% for car in cars %}
+        <li><a href="{% url "view_car" car.id %}"> {{ car.make }} </a></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
